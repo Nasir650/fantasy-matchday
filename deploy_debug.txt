@@ -1,0 +1,595 @@
+﻿[2026-01-01T15:54:39.735Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[2026-01-01T15:54:39.737Z] > authorizing via signed-in user (briancanada543210@gmail.com)
+[2026-01-01T15:54:39.738Z] [iam] checking project matchday-e447b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[2026-01-01T15:54:39.741Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:54:39.742Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:54:39.747Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions [none]
+[2026-01-01T15:54:39.747Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions x-goog-quota-user=projects/matchday-e447b
+[2026-01-01T15:54:39.748Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[2026-01-01T15:54:41.306Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions 200
+[2026-01-01T15:54:41.306Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[2026-01-01T15:54:41.307Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:54:41.307Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:54:41.307Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/matchday-e447b [none]
+[2026-01-01T15:54:41.962Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/matchday-e447b 200
+[2026-01-01T15:54:41.962Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/matchday-e447b {"projectId":"matchday-e447b","projectNumber":"914670665828","displayName":"matchday","name":"projects/matchday-e447b","resources":{"hostingSite":"matchday-e447b"},"state":"ACTIVE","etag":"1_2f59bed2-152b-479e-9e82-40de0ee3dacf"}
+[2026-01-01T15:54:47.212Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:54:47.212Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:54:47.212Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/matchday-e447b/sites pageToken=&pageSize=10
+[2026-01-01T15:54:48.953Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/matchday-e447b/sites 200
+[2026-01-01T15:54:48.953Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/matchday-e447b/sites {"sites":[{"name":"projects/matchday-e447b/sites/matchday-e447b","defaultUrl":"https://matchday-e447b.web.app","appId":"1:914670665828:web:9821e5ead6eb39c852df71","type":"DEFAULT_SITE"}]}
+[2026-01-01T15:54:48.954Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:54:48.954Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:54:48.955Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:914670665828:web:9821e5ead6eb39c852df71/config [none]
+[2026-01-01T15:54:50.017Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:914670665828:web:9821e5ead6eb39c852df71/config 200
+[2026-01-01T15:54:50.017Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:914670665828:web:9821e5ead6eb39c852df71/config {"projectId":"matchday-e447b","appId":"1:914670665828:web:9821e5ead6eb39c852df71","storageBucket":"matchday-e447b.firebasestorage.app","apiKey":"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk","authDomain":"matchday-e447b.firebaseapp.com","messagingSenderId":"914670665828","projectNumber":"914670665828","version":"2"}
+
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[2026-01-01T15:55:01.763Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:01.763Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:01.764Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/matchday-e447b/sites/matchday-e447b [none]
+[2026-01-01T15:55:03.378Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/matchday-e447b/sites/matchday-e447b 200
+[2026-01-01T15:55:03.378Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/matchday-e447b/sites/matchday-e447b {"name":"projects/matchday-e447b/sites/matchday-e447b","defaultUrl":"https://matchday-e447b.web.app","appId":"1:914670665828:web:9821e5ead6eb39c852df71","type":"DEFAULT_SITE"}
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+   Γû▓ Next.js 16.0.3 (Turbopack)
+
+
+
+ ΓÜá The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+
+   Creating an optimized production build ...
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+ Γ£ô Compiled successfully in 6.6s
+
+   Running TypeScript ...
+
+   Collecting page data using 7 workers ...
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+   Generating static pages using 7 workers (0/3) ...
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+ Γ£ô Generating static pages using 7 workers (3/3) in 1264.7ms
+
+   Finalizing page optimization ...
+
+
+
+Route (app)
+Γöî Γùï /_not-found
+Γö£ ╞Æ /[locale]
+Γö£ ╞Æ /[locale]/leaderboard
+Γö£ ╞Æ /[locale]/lineup
+Γö£ ╞Æ /[locale]/login
+Γöö ╞Æ /[locale]/register
+
+
+╞Æ Proxy (Middleware)
+
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+
+
+Building a Cloud Function to run this application. This is needed due to:
+ ΓÇó middleware
+ ΓÇó non-static component /[locale]/(auth)/login/page
+ ΓÇó non-static component /[locale]/(auth)/register/page
+ ΓÇó non-static component /[locale]/leaderboard/page
+ ΓÇó non-static component /[locale]/lineup/page
+[2026-01-01T15:55:25.195Z]  ΓÇó non-static component /[locale]/page
+
+[2026-01-01T15:55:25.464Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:25.464Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:25.465Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/matchday-e447b/sites/matchday-e447b [none]
+[2026-01-01T15:55:27.257Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/matchday-e447b/sites/matchday-e447b 200
+[2026-01-01T15:55:27.257Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/matchday-e447b/sites/matchday-e447b {"name":"projects/matchday-e447b/sites/matchday-e447b","defaultUrl":"https://matchday-e447b.web.app","appId":"1:914670665828:web:9821e5ead6eb39c852df71","type":"DEFAULT_SITE"}
+!  This integration expects Node version 16, 18, or 20. You're running version 24, problems may be encountered. 
+node.exe : npm warn 
+EBADENGINE Unsupported 
+engine {
+At C:\Users\DELL\AppData\Roa
+ming\npm\firebase.ps1:24 
+char:5
++     & "node$exe"  "$basedi
+r/node_modules/firebase-tool
+s/lib/bin/fireb ...
++     ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (npm w  
+  arn EBADENGINE Unsuppor   
+ ted engine {:String) []    
+, RemoteException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+npm warn EBADENGINE   
+package: 'temp_app@0.1.0',
+npm warn EBADENGINE   
+required: { node: '20' },
+npm warn EBADENGINE   
+current: { node: 
+'v24.12.0', npm: '11.6.2' }
+npm warn EBADENGINE }
+npm warn EBADENGINE 
+Unsupported engine {
+npm warn EBADENGINE   
+package: 'firebase-framework
+s@0.11.8',
+npm warn EBADENGINE   
+required: { node: '^16.0.0 
+|| ^18.0.0 || ^20.0.0 || 
+^22.0.0' },
+npm warn EBADENGINE   
+current: { node: 
+'v24.12.0', npm: '11.6.2' }
+npm warn EBADENGINE }
+
+up to date in 23s
+
+43 packages are looking for funding
+  run `npm fund` for details
+[2026-01-01T15:55:51.787Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "us-central1"
+      },
+      "site": "matchday-e447b",
+      "rewrites": [
+        {
+          "source": "/**",
+          "function": {
+            "functionId": "ssrmatchdaye447b",
+            "region": "us-central1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/_global-error",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/_global-error/layout,_N_T_/_global-error/page,_N_T_/_global-error"
+            }
+          ]
+        },
+        {
+          "source": "/_not-found",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/_not-found/layout,_N_T_/_not-found/page,_N_T_/_not-found"
+            }
+          ]
+        },
+        {
+          "source": "/favicon.ico",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, max-age=0, must-revalidate"
+            },
+            {
+              "key": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+            }
+          ]
+        },
+        {
+          "source": "/**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJjb25maWciOnsicHJvamVjdElkIjoibWF0Y2hkYXktZTQ0N2IiLCJhcHBJZCI6IjE6OTE0NjcwNjY1ODI4OndlYjo5ODIxZTVlYWQ2ZWIzOWM4NTJkZjcxIiwic3RvcmFnZUJ1Y2tldCI6Im1hdGNoZGF5LWU0NDdiLmZpcmViYXNlc3RvcmFnZS5hcHAiLCJhcGlLZXkiOiJBSXphU3lDbGtJYVFmTzVxMWFRd0tQaXl2em9STFFubTVSQy13UmsiLCJhdXRoRG9tYWluIjoibWF0Y2hkYXktZTQ0N2IuZmlyZWJhc2VhcHAuY29tIiwibWVzc2FnaW5nU2VuZGVySWQiOiI5MTQ2NzA2NjU4MjgiLCJwcm9qZWN0TnVtYmVyIjoiOTE0NjcwNjY1ODI4IiwidmVyc2lvbiI6IjIifSwiX2F1dGhUb2tlblN5bmNVUkwiOiIvX19zZXNzaW9uIn0; SameSite=Strict; Expires=2027-11-27T02:35:51.786Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase\\matchday-e447b\\hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase\\matchday-e447b\\functions",
+      "codebase": "firebase-frameworks-matchday-e447b"
+    }
+  ]
+}
+[2026-01-01T15:55:51.787Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[2026-01-01T15:55:51.787Z] > authorizing via signed-in user (briancanada543210@gmail.com)
+[2026-01-01T15:55:51.788Z] [iam] checking project matchday-e447b for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[2026-01-01T15:55:51.788Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:51.788Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:51.788Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions [none]
+[2026-01-01T15:55:51.789Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions x-goog-quota-user=projects/matchday-e447b
+[2026-01-01T15:55:51.789Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[2026-01-01T15:55:53.464Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions 200
+[2026-01-01T15:55:53.465Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[2026-01-01T15:55:53.465Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:53.465Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:53.465Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/matchday-e447b/locations/-/functions [none]
+[2026-01-01T15:55:54.396Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/matchday-e447b/locations/-/functions 200
+[2026-01-01T15:55:54.396Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/matchday-e447b/locations/-/functions {}
+[2026-01-01T15:55:54.397Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:54.397Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:54.397Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/-/functions filter=environment%3D%22GEN_2%22
+[2026-01-01T15:55:55.635Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/-/functions 200
+[2026-01-01T15:55:55.635Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/-/functions {"functions":[{"name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"build":"projects/914670665828/locations/us-central1/builds/4bda70ad-a15f-4ec8-9577-0f12f87c161e","runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/matchday-e447b/serviceAccounts/914670665828-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","timeoutSeconds":60,"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","uri":"https://ssrmatchdaye447b-gxdfux2qla-uc.a.run.app","serviceAccountEmail":"914670665828-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrmatchdaye447b-00001-leb","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","updateTime":"2026-01-01T15:53:25.959811894Z","labels":{"firebase-functions-hash":"ee4d7f53eb839ba800c3783929eda83f8fac46da","deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b"},"environment":"GEN_2","url":"https://us-central1-matchday-e447b.cloudfunctions.net/ssrmatchdaye447b","createTime":"2025-11-24T05:04:42.555460426Z","satisfiesPzi":true}]}
+i  hosting: The following function(s) are pinned to site matchday-e447b and will be deployed as well: ssrmatchdaye447b 
+
+=== Deploying to 'matchday-e447b'...
+
+i  deploying functions, hosting 
+[2026-01-01T15:55:55.638Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:55.638Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:55.638Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b [none]
+[2026-01-01T15:55:56.061Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b 200
+[2026-01-01T15:55:56.061Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b {"projectNumber":"914670665828","projectId":"matchday-e447b","lifecycleState":"ACTIVE","name":"matchday","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-11-23T15:03:53.358125Z"}
+i  functions: preparing codebase firebase-frameworks-matchday-e447b for deployment 
+i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[2026-01-01T15:55:56.064Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:56.064Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:56.064Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/matchday-e447b/adminSdkConfig [none]
+[2026-01-01T15:55:56.812Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/matchday-e447b/adminSdkConfig 200
+[2026-01-01T15:55:56.812Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/matchday-e447b/adminSdkConfig {"projectId":"matchday-e447b","storageBucket":"matchday-e447b.firebasestorage.app"}
+[2026-01-01T15:55:56.813Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:56.813Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:55:56.813Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/matchday-e447b/configs [none]
+[2026-01-01T15:55:57.993Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/matchday-e447b/configs 200
+[2026-01-01T15:55:57.993Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/matchday-e447b/configs {}
+[2026-01-01T15:55:57.995Z] Validating nodejs source
+!  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+!  functions: Please note that there will be breaking changes when you upgrade. 
+[2026-01-01T15:55:59.671Z] > [functions] package.json contents: {
+  "name": "temp_app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "firebase": "^12.6.0",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.554.0",
+    "next": "16.0.3",
+    "next-intl": "^4.5.5",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "firebase-frameworks": "^0.11.0",
+    "firebase-functions": "^6.0.1",
+    "firebase-admin": "^11.11.1"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "20"
+  }
+}
+[2026-01-01T15:55:59.671Z] Building nodejs source
+i  functions: Loading and analyzing source code for codebase firebase-frameworks-matchday-e447b to determine what to deploy 
+[2026-01-01T15:55:59.672Z] Could not find functions.yaml. Must use http discovery
+[2026-01-01T15:55:59.685Z] Found firebase-functions binary at 'D:\matchday fancy\.firebase\matchday-e447b\functions\node_modules\.bin\firebase-functions'
+Serving at port 8037
+
+[2026-01-01T15:56:00.142Z] Got response from /__/functions.yaml {"endpoints":{"ssrmatchdaye447b":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrmatchdaye447b"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+i  extensions: ensuring required API firebaseextensions.googleapis.com is enabled... 
+[2026-01-01T15:56:04.196Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[2026-01-01T15:56:04.196Z] > authorizing via signed-in user (briancanada543210@gmail.com)
+[2026-01-01T15:56:04.196Z] [iam] checking project matchday-e447b for permissions ["firebase.projects.get","firebaseextensions.instances.list"]
+[2026-01-01T15:56:04.196Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:04.196Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:04.197Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions [none]
+[2026-01-01T15:56:04.197Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions x-goog-quota-user=projects/matchday-e447b
+[2026-01-01T15:56:04.197Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[2026-01-01T15:56:06.029Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions 200
+[2026-01-01T15:56:06.030Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[2026-01-01T15:56:06.031Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:06.031Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:06.031Z] >>> [apiv2][query] GET https://firebaseextensions.googleapis.com/v1beta/projects/matchday-e447b/instances pageSize=100&pageToken=
+[2026-01-01T15:56:08.120Z] <<< [apiv2][status] GET https://firebaseextensions.googleapis.com/v1beta/projects/matchday-e447b/instances 200
+[2026-01-01T15:56:08.120Z] <<< [apiv2][body] GET https://firebaseextensions.googleapis.com/v1beta/projects/matchday-e447b/instances {}
+i  functions: Loaded environment variables from .env. 
+i  functions: preparing .firebase\matchday-e447b\functions directory for uploading... 
+i  functions: packaged D:\matchday fancy\.firebase\matchday-e447b\functions (34.44 MB) for uploading 
+i  functions: ensuring required API run.googleapis.com is enabled... 
+i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+i  functions: ensuring required API storage.googleapis.com is enabled... 
+i  functions: generating the service identity for pubsub.googleapis.com... 
+[2026-01-01T15:56:13.351Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:13.351Z] Checked if tokens are valid: true, expires at: 1767285885965
+i  functions: generating the service identity for eventarc.googleapis.com... 
+[2026-01-01T15:56:13.351Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:13.352Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:13.352Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/914670665828/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[2026-01-01T15:56:13.352Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1beta1/projects/914670665828/services/pubsub.googleapis.com:generateServiceIdentity x-goog-quota-user=projects/914670665828
+[2026-01-01T15:56:13.352Z] >>> [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/914670665828/services/pubsub.googleapis.com:generateServiceIdentity {}
+[2026-01-01T15:56:13.355Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/914670665828/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[2026-01-01T15:56:13.355Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1beta1/projects/914670665828/services/eventarc.googleapis.com:generateServiceIdentity x-goog-quota-user=projects/914670665828
+[2026-01-01T15:56:13.355Z] >>> [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/914670665828/services/eventarc.googleapis.com:generateServiceIdentity {}
+[2026-01-01T15:56:15.195Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/914670665828/services/eventarc.googleapis.com:generateServiceIdentity 200
+[2026-01-01T15:56:15.195Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/914670665828/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-914670665828@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"105726363817737474314"}}
+[2026-01-01T15:56:15.250Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/914670665828/services/pubsub.googleapis.com:generateServiceIdentity 200
+[2026-01-01T15:56:15.250Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/914670665828/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-914670665828@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"117532468377021018875"}}
+[2026-01-01T15:56:15.254Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:15.254Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:15.254Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b [none]
+[2026-01-01T15:56:16.775Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b 200
+[2026-01-01T15:56:16.776Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/matchday-e447b {"projectNumber":"914670665828","projectId":"matchday-e447b","lifecycleState":"ACTIVE","name":"matchday","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-11-23T15:03:53.358125Z"}
+[2026-01-01T15:56:16.776Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:16.777Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:16.777Z] >>> [apiv2][query] GET https://compute.googleapis.com/compute/v1/projects/914670665828 [none]
+[2026-01-01T15:56:18.067Z] <<< [apiv2][status] GET https://compute.googleapis.com/compute/v1/projects/914670665828 403
+[2026-01-01T15:56:18.068Z] <<< [apiv2][body] GET https://compute.googleapis.com/compute/v1/projects/914670665828 {"error":{"code":403,"message":"Compute Engine API has not been used in project 914670665828 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","errors":[{"message":"Compute Engine API has not been used in project 914670665828 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","domain":"usageLimits","reason":"accessNotConfigured","extendedHelp":"https://console.developers.google.com"}],"status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"SERVICE_DISABLED","domain":"googleapis.com","metadata":{"service":"compute.googleapis.com","consumer":"projects/914670665828","containerInfo":"914670665828","activationUrl":"https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828","serviceTitle":"Compute Engine API"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Compute Engine API has not been used in project 914670665828 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developers console API activation","url":"https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828"}]}]}}
+[2026-01-01T15:56:18.069Z] unable to look up default compute service account. Falling back to 914670665828-compute@developer.gserviceaccount.com. Error: {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":403,"message":"Compute Engine API has not been used in project 914670665828 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","errors":[{"message":"Compute Engine API has not been used in project 914670665828 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","domain":"usageLimits","reason":"accessNotConfigured","extendedHelp":"https://console.developers.google.com"}],"status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"SERVICE_DISABLED","domain":"googleapis.com","metadata":{"service":"compute.googleapis.com","consumer":"projects/914670665828","containerInfo":"914670665828","activationUrl":"https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828","serviceTitle":"Compute Engine API"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Compute Engine API has not been used in project 914670665828 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developers console API activation","url":"https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828"}]}]}},"response":{"statusCode":403}},"exit":1,"message":"Request to https://compute.googleapis.com/compute/v1/projects/914670665828 had HTTP Error: 403, Compute Engine API has not been used in project 914670665828 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=914670665828 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","status":403}
+[2026-01-01T15:56:18.072Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:18.072Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:18.073Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/matchday-e447b/versions [none]
+[2026-01-01T15:56:18.073Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/matchday-e447b/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[2026-01-01T15:56:19.953Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/matchday-e447b/versions 200
+[2026-01-01T15:56:19.953Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/matchday-e447b/versions {"name":"projects/914670665828/sites/matchday-e447b/versions/b136646b2349706b","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[2026-01-01T15:56:19.954Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:19.954Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:19.954Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/matchday-e447b/billingInfo [none]
+[2026-01-01T15:56:21.142Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/matchday-e447b/billingInfo 200
+[2026-01-01T15:56:21.142Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/matchday-e447b/billingInfo {"name":"projects/matchday-e447b/billingInfo","projectId":"matchday-e447b","billingAccountName":"billingAccounts/016D23-E516D8-93195D","billingEnabled":true}
+[2026-01-01T15:56:21.145Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:21.145Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:21.145Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/functions:generateUploadUrl [none]
+[2026-01-01T15:56:22.289Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/functions:generateUploadUrl 200
+[2026-01-01T15:56:22.289Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-914670665828.us-central1.cloudfunctions.appspot.com/42df2cc6-221b-4b20-b561-ac48c2857295.zip?GoogleAccessId=service-914670665828@gcf-admin-robot.iam.gserviceaccount.com&Expires=1767284780&Signature=iqeM4tvKzz365Q3vGZjQ2K5XgN9kf7UQd5MhjfTjoqP6YTeFIJHUcCHkf3WhRt0Xpv8eYScpCkq5hxVGStWhdNAMtPFUoL2sJg4ELjXTipNZ6NrSk9%2FFuJDUNgOha8avcrj4NzNJ%2B1lKX5ecVV7Z25pzNA%2BC1EYp3QmDHgafX1oKgT6KXdka53QNuFzGjwX%2FvF9tz9niALBqQFeBPS6isGqSYtxUNr2b69KVWKcZ00uFsv2JXPKEM%2Fjz1Swbj%2B%2BtoykNc%2FQladf1I7IdOBUWvl819ne2N2AXsMqDP2CpxyUdJc7qonKKUyY3Jb3sTu0McGNfQ0vG8AI9Vg116Vkq%2BA%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-914670665828.us-central1.cloudfunctions.appspot.com","object":"42df2cc6-221b-4b20-b561-ac48c2857295.zip"}}
+[2026-01-01T15:56:22.290Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-914670665828.us-central1.cloudfunctions.appspot.com/42df2cc6-221b-4b20-b561-ac48c2857295.zip GoogleAccessId=service-914670665828%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1767284780&Signature=iqeM4tvKzz365Q3vGZjQ2K5XgN9kf7UQd5MhjfTjoqP6YTeFIJHUcCHkf3WhRt0Xpv8eYScpCkq5hxVGStWhdNAMtPFUoL2sJg4ELjXTipNZ6NrSk9%2FFuJDUNgOha8avcrj4NzNJ%2B1lKX5ecVV7Z25pzNA%2BC1EYp3QmDHgafX1oKgT6KXdka53QNuFzGjwX%2FvF9tz9niALBqQFeBPS6isGqSYtxUNr2b69KVWKcZ00uFsv2JXPKEM%2Fjz1Swbj%2B%2BtoykNc%2FQladf1I7IdOBUWvl819ne2N2AXsMqDP2CpxyUdJc7qonKKUyY3Jb3sTu0McGNfQ0vG8AI9Vg116Vkq%2BA%3D%3D
+[2026-01-01T15:56:22.290Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-914670665828.us-central1.cloudfunctions.appspot.com/42df2cc6-221b-4b20-b561-ac48c2857295.zip [stream]
+[2026-01-01T15:56:55.629Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-914670665828.us-central1.cloudfunctions.appspot.com/42df2cc6-221b-4b20-b561-ac48c2857295.zip 200
+[2026-01-01T15:56:55.630Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-914670665828.us-central1.cloudfunctions.appspot.com/42df2cc6-221b-4b20-b561-ac48c2857295.zip [omitted]
++  functions: .firebase\matchday-e447b\functions source uploaded successfully 
+i  hosting[matchday-e447b]: beginning deploy... 
+i  hosting[matchday-e447b]: found 38 files in .firebase\matchday-e447b\hosting 
+[2026-01-01T15:56:55.658Z] [hosting] uploading with 200 concurrency
+[2026-01-01T15:56:55.818Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:55.819Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:55.820Z] [hosting] hash cache [LmZpcmViYXNlXG1hdGNoZGF5LWU0NDdiXGhvc3Rpbmc] stored for 38 files
+[2026-01-01T15:56:55.821Z] [hosting][hash queue][FINAL] {"max":151,"min":1,"avg":45.65789473684211,"active":0,"complete":38,"success":38,"errored":0,"retried":0,"total":38,"elapsed":159}
+[2026-01-01T15:56:55.821Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/914670665828/sites/matchday-e447b/versions/b136646b2349706b:populateFiles [none]
+[2026-01-01T15:56:55.822Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/914670665828/sites/matchday-e447b/versions/b136646b2349706b:populateFiles {"files":{"/window.svg":"6bd2003bd35bb32c1c0d99ab3aeac0cc1edaefd79f27df1d954bc87184048d74","/vercel.svg":"529a1a21b4a82475a82db26173c28d7b27e2dc9d4b900eaf1c5329d96eea4ddd","/next.svg":"0665b9ab4493aa9d7e988b57024e28772ae543e804b8cf6b0a3633854b7c3c7f","/globe.svg":"6502a3e6120bf2d6e8417e7c40bb57fb8a6954de9c86d3f43076a75b60cd23a2","/file.svg":"5a09df6187e21aa9a7d05094389385876ac93c818e1dcbb77a26a8fe408bf79c","/images/bg.png":"f94f6027b349e004dbdef2d5093515d68b12f827581762a8029c83587146b5c3","/_not-found.html":"12ced334c9a340cf4cf4329d06963563392612503f7a528a7ae346ce6a812685","/_global-error.html":"9af0ffede49311321995f28388e01ec030b2e6f48203b196158912e8111d8020","/500.html":"9af0ffede49311321995f28388e01ec030b2e6f48203b196158912e8111d8020","/404.html":"12ced334c9a340cf4cf4329d06963563392612503f7a528a7ae346ce6a812685","/_next/static/MAkREmmKlviuWoYbBPfvn/_clientMiddlewareManifest.json":"8b31e4ed1ec6be91ee606c5b0168844b306cc1187a75332faba156379fc0c1b2","/_next/static/MAkREmmKlviuWoYbBPfvn/_ssgManifest.js":"dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5","/_next/static/MAkREmmKlviuWoYbBPfvn/_buildManifest.js":"dcbe1c9b9159ca21caea98e1bad364012ae284e9551375ca62b83d2811efac91","/favicon.ico":"36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9","/_next/static/chunks/ff1a16fafef87110.js":"1c5ce9de9f2087594a99c79ed2344979288c2efaeb57adf3aecb7d6c8dfa5bcf","/_next/static/chunks/turbopack-17b47f05a4715158.js":"cee3ec074f20ad161d87830094b96d9865080ec2d67c2e2baf9903fa57c7ee2b","/_next/static/chunks/f98f702c9b7cf585.js":"378f942b0f3371fb7cea26b0a2252df49a3169f36f0c8e9bfa4d76c9860efc47","/_next/static/media/favicon.0b3bf435.ico":"36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9","/_next/static/chunks/d2a298e8ebaf96e3.css":"7cb682b24d4d755aaec11654fb1be10268b978fa22d161d8d46ddd7d0901582d","/_next/static/chunks/9c6d5f8a6de9c496.js":"2463041c9e492c2d62af6fa725d1e453ef3944589e9d4f86a2ce4c1bccbb9094","/_next/static/chunks/e491d436f4519dd0.js":"bdc35729f9775b554e733f4ed5ffd662a7c7cbfb7dfee444ad5932f4de512cca","/_next/static/chunks/f582442865fbf4f1.js":"c4d10909852af8eaf476001345322bdaa3666a14839e02b405475c470b1118f1","/_next/static/chunks/b4811a7e002942b5.js":"6270f640f577b9101cf9bbe99034789bfb5bddb59f7e462e2b00b897c51d4d42","/_next/static/chunks/8496c700b1fe79d3.js":"4031786f683daa5eb824f0bd8700c6b97b400352b452a5155891d0bb759fe943","/_next/static/chunks/64302582155c784e.css":"1bebe6cc33d1b25f57259de9e7074725138a730d35680eac069a6a9f0d21caac","/_next/static/chunks/5368689dcf628f8c.css":"98260d05aaa823042ee8d9aec6dc2139f018d38a47c804325925dbb8b8a24323","/_next/static/chunks/188b015d436a2bf8.css":"92b0c6235cc66b6e7c7a201020655e352dcc5053a0c9ed7eddef1e08174fc39f","/_next/static/chunks/310e9a8f5b0b232f.css":"0e35015796e81007d7fe515d5dc597e16cd7dcca20577913bb6454f87af0ceff","/_next/static/chunks/185bd602cef4988f.js":"fcf1d11bdc35c160e1608c3a237ad3caa368e4aacd2426d0caccbad86b29bf3e","/_next/static/chunks/933aa5eaa1fd32c6.js":"7afc9d7c482ab2b54b3744509f6f21d5b5c4b6a26d4d85d8e8c24b2132b17e8b","/_next/static/chunks/247eb132b7f7b574.js":"9921c934244f7dc73e4a67ae57f0e6ad054227c2f4b49c7c96f9d3673b64f86d","/_next/static/chunks/6a8b6d0f04868e51.js":"5942906d7bfeb4c4b848a8bdbdc1a6045aab2196604013a654c0bc6c695a59d1","/_next/static/chunks/6740f161f60c6ab5.js":"b22361d53243d60a3c87b7199672924591e7f5fc0deca52e1a1ae420a64dcfb7","/_next/static/chunks/a6dad97d9634a72d.js":"18e28d3214eda45048d80d3925ea7627b809e69ad2e95f7f98459e9146a61c3d","/_next/static/chunks/a4eeb46e07741350.js":"05fffd77d6d9d626d57d942f7f24c054f19665fb50827a362056d0e36c31209d","/_next/static/media/17-06 1.a099e3eb.jpg":"08c4185b2ff10952f8b5239d88c6f5485b709846490e3ba90ad8c8c3d0fc8636","/_next/static/media/register.77275c83.png":"a7c78dde0baf918a2692a7ec031548e2e8bc19882c6dcfa125d628decf91c578","/_next/static/media/soccer-player-with-ball-grass-field_23-2150821562 1.eaf92126.png":"7f65b022dbeeda4aa09f6fddfcd343992a0224aed0583340fd35a8a4ddae2f34"}}
+[2026-01-01T15:56:57.565Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/914670665828/sites/matchday-e447b/versions/b136646b2349706b:populateFiles 200
+[2026-01-01T15:56:57.565Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/914670665828/sites/matchday-e447b/versions/b136646b2349706b:populateFiles {"uploadRequiredHashes":["12ced334c9a340cf4cf4329d06963563392612503f7a528a7ae346ce6a812685","9af0ffede49311321995f28388e01ec030b2e6f48203b196158912e8111d8020"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/matchday-e447b/versions/b136646b2349706b/files"}
+[2026-01-01T15:56:57.567Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:57.567Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:57.568Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:57.568Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:57.569Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/matchday-e447b/versions/b136646b2349706b/files/12ced334c9a340cf4cf4329d06963563392612503f7a528a7ae346ce6a812685 [none]
+[2026-01-01T15:56:57.569Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/matchday-e447b/versions/b136646b2349706b/files/12ced334c9a340cf4cf4329d06963563392612503f7a528a7ae346ce6a812685 [stream]
+[2026-01-01T15:56:57.572Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/matchday-e447b/versions/b136646b2349706b/files/9af0ffede49311321995f28388e01ec030b2e6f48203b196158912e8111d8020 [none]
+[2026-01-01T15:56:57.572Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/matchday-e447b/versions/b136646b2349706b/files/9af0ffede49311321995f28388e01ec030b2e6f48203b196158912e8111d8020 [stream]
+[2026-01-01T15:56:57.576Z] [hosting][populate queue][FINAL] {"max":1750,"min":1750,"avg":1750,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1758}
+[2026-01-01T15:56:57.576Z] [hosting] uploads queued: 2
+i  hosting: uploading new files [0/2] (0%) 
+[2026-01-01T15:56:59.014Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/matchday-e447b/versions/b136646b2349706b/files/9af0ffede49311321995f28388e01ec030b2e6f48203b196158912e8111d8020 200
+[2026-01-01T15:56:59.014Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/matchday-e447b/versions/b136646b2349706b/files/9af0ffede49311321995f28388e01ec030b2e6f48203b196158912e8111d8020 [stream]
+[2026-01-01T15:56:59.031Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/matchday-e447b/versions/b136646b2349706b/files/12ced334c9a340cf4cf4329d06963563392612503f7a528a7ae346ce6a812685 200
+[2026-01-01T15:56:59.032Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/matchday-e447b/versions/b136646b2349706b/files/12ced334c9a340cf4cf4329d06963563392612503f7a528a7ae346ce6a812685 [stream]
+[2026-01-01T15:56:59.032Z] [hosting][upload queue][FINAL] {"max":1467,"min":1446,"avg":1456.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":1467}
+i  hosting: upload complete 
++  hosting[matchday-e447b]: file upload complete 
+[2026-01-01T15:56:59.038Z] [hosting] deploy completed after 3404ms
+i  functions: updating Node.js 20 (2nd Gen) function firebase-frameworks-matchday-e447b:ssrmatchdaye447b(us-central1)... 
+[2026-01-01T15:56:59.053Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:59.053Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:56:59.054Z] >>> [apiv2][query] PATCH https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b updateMask=name%2CbuildConfig.runtime%2CbuildConfig.entryPoint%2CbuildConfig.source.storageSource.bucket%2CbuildConfig.source.storageSource.object%2CbuildConfig.environmentVariables%2CbuildConfig.sourceToken%2CserviceConfig.environmentVariables%2CserviceConfig.ingressSettings%2CserviceConfig.timeoutSeconds%2CserviceConfig.serviceAccountEmail%2CserviceConfig.availableMemory%2CserviceConfig.minInstanceCount%2CserviceConfig.maxInstanceCount%2CserviceConfig.maxInstanceRequestConcurrency%2CserviceConfig.availableCpu%2CserviceConfig.vpcConnector%2CserviceConfig.vpcConnectorEgressSettings%2Clabels
+[2026-01-01T15:56:59.055Z] >>> [apiv2][body] PATCH https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b {"name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-uploads-914670665828.us-central1.cloudfunctions.appspot.com","object":"42df2cc6-221b-4b20-b561-ac48c2857295.zip"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":null,"timeoutSeconds":null,"serviceAccountEmail":null,"availableMemory":"256Mi","minInstanceCount":null,"maxInstanceCount":null,"maxInstanceRequestConcurrency":80,"availableCpu":"1","vpcConnector":null,"vpcConnectorEgressSettings":null},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b","firebase-functions-hash":"1a397662747f32a04a5f555089c907b2c0d2470a"}}
+[2026-01-01T15:57:01.129Z] <<< [apiv2][status] PATCH https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b 200
+[2026-01-01T15:57:01.129Z] <<< [apiv2][body] PATCH https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b {"name":"projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2026-01-01T15:56:59.776576650Z","target":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","verb":"update","cancelRequested":false,"apiVersion":"v2"},"done":false}
+[2026-01-01T15:57:01.130Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:01.130Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:01.131Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b [none]
+[2026-01-01T15:57:01.956Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b 200
+[2026-01-01T15:57:01.956Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b {"name":"projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2026-01-01T15:56:59.776576650Z","target":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","verb":"update","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1767283019731426"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/matchday-e447b/serviceAccounts/914670665828-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","timeoutSeconds":60,"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","uri":"https://ssrmatchdaye447b-gxdfux2qla-uc.a.run.app","serviceAccountEmail":"914670665828-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrmatchdaye447b-00001-leb","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b","firebase-functions-hash":"1a397662747f32a04a5f555089c907b2c0d2470a"},"environment":"GEN_2","url":"https://us-central1-matchday-e447b.cloudfunctions.net/ssrmatchdaye447b","satisfiesPzi":true},"stages":[{"name":"BUILD","message":"Creating build","state":"IN_PROGRESS","resource":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"UPDATE_FUNCTION","buildName":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88"},"done":false}
+[2026-01-01T15:57:02.470Z] [update-firebase-frameworks-matchday-e447b-us-central1-ssrmatchdaye447b] Retrying task index 0
+[2026-01-01T15:57:02.470Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:02.470Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:02.470Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b [none]
+[2026-01-01T15:57:03.293Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b 200
+[2026-01-01T15:57:03.293Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b {"name":"projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2026-01-01T15:56:59.776576650Z","target":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","verb":"update","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1767283019731426"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/matchday-e447b/serviceAccounts/914670665828-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","timeoutSeconds":60,"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","uri":"https://ssrmatchdaye447b-gxdfux2qla-uc.a.run.app","serviceAccountEmail":"914670665828-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrmatchdaye447b-00001-leb","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b","firebase-functions-hash":"1a397662747f32a04a5f555089c907b2c0d2470a"},"environment":"GEN_2","url":"https://us-central1-matchday-e447b.cloudfunctions.net/ssrmatchdaye447b","satisfiesPzi":true},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"UPDATE_FUNCTION","buildName":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88"},"done":false}
+[2026-01-01T15:57:04.297Z] [update-firebase-frameworks-matchday-e447b-us-central1-ssrmatchdaye447b] Retrying task index 0
+[2026-01-01T15:57:04.297Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:04.297Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:04.297Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b [none]
+[2026-01-01T15:57:05.119Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b 200
+[2026-01-01T15:57:05.119Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b {"name":"projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2026-01-01T15:56:59.776576650Z","target":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","verb":"update","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1767283019731426"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/matchday-e447b/serviceAccounts/914670665828-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","timeoutSeconds":60,"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","uri":"https://ssrmatchdaye447b-gxdfux2qla-uc.a.run.app","serviceAccountEmail":"914670665828-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrmatchdaye447b-00001-leb","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b","firebase-functions-hash":"1a397662747f32a04a5f555089c907b2c0d2470a"},"environment":"GEN_2","url":"https://us-central1-matchday-e447b.cloudfunctions.net/ssrmatchdaye447b","satisfiesPzi":true},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"UPDATE_FUNCTION","buildName":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88"},"done":false}
+[2026-01-01T15:57:07.120Z] [update-firebase-frameworks-matchday-e447b-us-central1-ssrmatchdaye447b] Retrying task index 0
+[2026-01-01T15:57:07.120Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:07.120Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:07.121Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b [none]
+[2026-01-01T15:57:07.948Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b 200
+[2026-01-01T15:57:07.948Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b {"name":"projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2026-01-01T15:56:59.776576650Z","target":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","verb":"update","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1767283019731426"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/matchday-e447b/serviceAccounts/914670665828-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","timeoutSeconds":60,"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","uri":"https://ssrmatchdaye447b-gxdfux2qla-uc.a.run.app","serviceAccountEmail":"914670665828-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrmatchdaye447b-00001-leb","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b","firebase-functions-hash":"1a397662747f32a04a5f555089c907b2c0d2470a"},"environment":"GEN_2","url":"https://us-central1-matchday-e447b.cloudfunctions.net/ssrmatchdaye447b","satisfiesPzi":true},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"UPDATE_FUNCTION","buildName":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88"},"done":false}
+[2026-01-01T15:57:11.960Z] [update-firebase-frameworks-matchday-e447b-us-central1-ssrmatchdaye447b] Retrying task index 0
+[2026-01-01T15:57:11.960Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:11.960Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:11.961Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b [none]
+[2026-01-01T15:57:12.786Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b 200
+[2026-01-01T15:57:12.787Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b {"name":"projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2026-01-01T15:56:59.776576650Z","target":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","verb":"update","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1767283019731426"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/matchday-e447b/serviceAccounts/914670665828-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","timeoutSeconds":60,"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","uri":"https://ssrmatchdaye447b-gxdfux2qla-uc.a.run.app","serviceAccountEmail":"914670665828-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrmatchdaye447b-00001-leb","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b","firebase-functions-hash":"1a397662747f32a04a5f555089c907b2c0d2470a"},"environment":"GEN_2","url":"https://us-central1-matchday-e447b.cloudfunctions.net/ssrmatchdaye447b","satisfiesPzi":true},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"UPDATE_FUNCTION","buildName":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88"},"done":false}
+[2026-01-01T15:57:20.796Z] [update-firebase-frameworks-matchday-e447b-us-central1-ssrmatchdaye447b] Retrying task index 0
+[2026-01-01T15:57:20.797Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:20.797Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:20.797Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b [none]
+[2026-01-01T15:57:22.033Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b 200
+[2026-01-01T15:57:22.034Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b {"name":"projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2026-01-01T15:56:59.776576650Z","target":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","verb":"update","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1767283019731426"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/matchday-e447b/serviceAccounts/914670665828-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","timeoutSeconds":60,"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","uri":"https://ssrmatchdaye447b-gxdfux2qla-uc.a.run.app","serviceAccountEmail":"914670665828-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrmatchdaye447b-00001-leb","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b","firebase-functions-hash":"1a397662747f32a04a5f555089c907b2c0d2470a"},"environment":"GEN_2","url":"https://us-central1-matchday-e447b.cloudfunctions.net/ssrmatchdaye447b","satisfiesPzi":true},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"UPDATE_FUNCTION","buildName":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88"},"done":false}
+[2026-01-01T15:57:32.037Z] [update-firebase-frameworks-matchday-e447b-us-central1-ssrmatchdaye447b] Retrying task index 0
+[2026-01-01T15:57:32.037Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:32.038Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:32.038Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b [none]
+[2026-01-01T15:57:33.083Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b 200
+[2026-01-01T15:57:33.084Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b {"name":"projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2026-01-01T15:56:59.776576650Z","target":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","verb":"update","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1767283019731426"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/matchday-e447b/serviceAccounts/914670665828-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","timeoutSeconds":60,"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","uri":"https://ssrmatchdaye447b-gxdfux2qla-uc.a.run.app","serviceAccountEmail":"914670665828-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrmatchdaye447b-00001-leb","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b","firebase-functions-hash":"1a397662747f32a04a5f555089c907b2c0d2470a"},"environment":"GEN_2","url":"https://us-central1-matchday-e447b.cloudfunctions.net/ssrmatchdaye447b","satisfiesPzi":true},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"UPDATE_FUNCTION","buildName":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88"},"done":false}
+[2026-01-01T15:57:43.093Z] [update-firebase-frameworks-matchday-e447b-us-central1-ssrmatchdaye447b] Retrying task index 0
+[2026-01-01T15:57:43.094Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:43.095Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:43.095Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b [none]
+[2026-01-01T15:57:44.173Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b 200
+[2026-01-01T15:57:44.174Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b {"name":"projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2026-01-01T15:56:59.776576650Z","target":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","verb":"update","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1767283019731426"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/matchday-e447b/serviceAccounts/914670665828-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","timeoutSeconds":60,"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","uri":"https://ssrmatchdaye447b-gxdfux2qla-uc.a.run.app","serviceAccountEmail":"914670665828-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrmatchdaye447b-00001-leb","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b","firebase-functions-hash":"1a397662747f32a04a5f555089c907b2c0d2470a"},"environment":"GEN_2","url":"https://us-central1-matchday-e447b.cloudfunctions.net/ssrmatchdaye447b","satisfiesPzi":true},"stages":[{"name":"BUILD","message":"Build in progress","state":"IN_PROGRESS","resource":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88","resourceUri":"https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828"},{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"UPDATE_FUNCTION","buildName":"projects/914670665828/locations/us-central1/builds/6374ba6c-f483-4a95-a4ae-db43114ada88"},"done":false}
+[2026-01-01T15:57:54.186Z] [update-firebase-frameworks-matchday-e447b-us-central1-ssrmatchdaye447b] Retrying task index 0
+[2026-01-01T15:57:54.187Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:54.187Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:54.187Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b [none]
+[2026-01-01T15:57:55.345Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b 200
+[2026-01-01T15:57:55.345Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b {"name":"projects/matchday-e447b/locations/us-central1/operations/operation-1767283018991-64755a49086f4-5b564556-e04cb23b","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2026-01-01T15:56:59.776576650Z","endTime":"2026-01-01T15:57:48.705056751Z","target":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","verb":"update","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/matchday-e447b/locations/us-central1/functions/ssrmatchdaye447b","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmatchdaye447b","source":{"storageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1767283019731426"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-914670665828-us-central1","object":"ssrmatchdaye447b/function-source.zip","generation":"1763960682045569"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/matchday-e447b/serviceAccounts/914670665828-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","timeoutSeconds":60,"environmentVariables":{"VERCEL_URL":"matchday-e447b.web.app","__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}","GCLOUD_PROJECT":"matchday-e447b","EVENTARC_CLOUD_EVENT_SOURCE":"projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b","FUNCTION_TARGET":"ssrmatchdaye447b","LOG_EXECUTION_ID":"true"},"ingressSettings":"ALLOW_ALL","uri":"https://ssrmatchdaye447b-gxdfux2qla-uc.a.run.app","serviceAccountEmail":"914670665828-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"ssrmatchdaye447b-00001-leb","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-matchday-e447b","firebase-functions-hash":"1a397662747f32a04a5f555089c907b2c0d2470a"},"environment":"GEN_2","url":"https://us-central1-matchday-e447b.cloudfunctions.net/ssrmatchdaye447b","satisfiesPzi":true},"stages":[{"name":"SERVICE","state":"NOT_STARTED"}],"operationType":"UPDATE_FUNCTION"},"done":true,"error":{"code":3,"message":"Build failed with status: FAILURE and message: npm error code EUSAGE\nnpm error\nnpm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.\nnpm error\nnpm error Missing: acorn@8.15.0 from lock file\nnpm error Missing: @types/markdown-it@14.1.2 from lock file\nnpm error Missing: markdown-it@14.1.0 from lock file\nnpm error Missing: @swc/helpers@0.5.18 from lock file\nnpm error\nnpm error Clean install a project\nnpm error\nnpm error Usage:\nnpm error npm ci\nnpm error\nnpm error Options:\nnpm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]\nnpm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]\nnpm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]\nnpm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]\nnpm error [--no-bin-links] [--no-fund] [--dry-run]\nnpm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]\nnpm error [-ws|--workspaces] [--include-workspace-root] [--install-links]\nnpm error\nnpm error aliases: clean-install, ic, install-clean, isntall-clean\nnpm error\nnpm error Run \"npm help ci\" for more info\nnpm error A complete log of this run can be found in: /www-data-home/.npm/_logs/2026-01-01T15_57_26_644Z-debug-0.log. For more details see the logs at https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828."}}
+[2026-01-01T15:57:55.346Z] Got source token undefined for region us-central1
+Build failed with status: FAILURE and message: npm error code EUSAGE
+npm error
+npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm error
+npm error Missing: acorn@8.15.0 from lock file
+npm error Missing: @types/markdown-it@14.1.2 from lock file
+npm error Missing: markdown-it@14.1.0 from lock file
+npm error Missing: @swc/helpers@0.5.18 from lock file
+npm error
+npm error Clean install a project
+npm error
+npm error Usage:
+npm error npm ci
+npm error
+npm error Options:
+npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+npm error [--no-bin-links] [--no-fund] [--dry-run]
+npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+npm error
+npm error aliases: clean-install, ic, install-clean, isntall-clean
+npm error
+npm error Run "npm help ci" for more info
+npm error A complete log of this run can be found in: /www-data-home/.npm/_logs/2026-01-01T15_57_26_644Z-debug-0.log. For more details see the logs at https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828.
+[2026-01-01T15:57:55.349Z] Total Function Deployment time: 56300
+[2026-01-01T15:57:55.349Z] 1 Functions Deployed
+[2026-01-01T15:57:55.349Z] 1 Functions Errored
+[2026-01-01T15:57:55.349Z] 0 Function Deployments Aborted
+[2026-01-01T15:57:55.349Z] Average Function Deployment time: 56298
+
+Functions deploy had errors with the following functions:
+	firebase-frameworks-matchday-e447b:ssrmatchdaye447b(us-central1)
+[2026-01-01T15:57:55.351Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[2026-01-01T15:57:55.351Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:55.352Z] Checked if tokens are valid: true, expires at: 1767285885965
+[2026-01-01T15:57:55.352Z] >>> [apiv2][query] GET https://artifactregistry.googleapis.com/v1/projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts [none]
+[2026-01-01T15:57:56.555Z] <<< [apiv2][status] GET https://artifactregistry.googleapis.com/v1/projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts 200
+[2026-01-01T15:57:56.555Z] <<< [apiv2][body] GET https://artifactregistry.googleapis.com/v1/projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts {"name":"projects/matchday-e447b/locations/us-central1/repositories/gcf-artifacts","format":"DOCKER","description":"This repository is created and used by Cloud Functions for storing function docker images.","labels":{"goog-managed-by":"cloudfunctions"},"createTime":"2025-11-24T05:04:51.239449Z","updateTime":"2025-12-01T08:56:04.340456Z","mode":"STANDARD_REPOSITORY","cleanupPolicies":{"firebase-functions-cleanup":{"id":"firebase-functions-cleanup","action":"DELETE","condition":{"tagState":"ANY","olderThan":"604800s"}}},"vulnerabilityScanningConfig":{"lastEnableTime":"2025-11-24T05:04:42.747745966Z","enablementState":"SCANNING_DISABLED","enablementStateReason":"API containerscanning.googleapis.com is not enabled."},"satisfiesPzi":true,"registryUri":"us-central1-docker.pkg.dev/matchday-e447b/gcf-artifacts"}
+[2026-01-01T15:57:56.555Z] Functions deploy failed.
+[2026-01-01T15:57:56.555Z] {
+  "endpoint": {
+    "id": "ssrmatchdaye447b",
+    "project": "matchday-e447b",
+    "region": "us-central1",
+    "entryPoint": "ssrmatchdaye447b",
+    "platform": "gcfv2",
+    "runtime": "nodejs20",
+    "httpsTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "serviceAccount": null,
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "VERCEL_URL": "matchday-e447b.web.app",
+      "__FIREBASE_FRAMEWORKS_ENTRY__": "next.js",
+      "__FIREBASE_DEFAULTS__": "{\"config\":{\"projectId\":\"matchday-e447b\",\"appId\":\"1:914670665828:web:9821e5ead6eb39c852df71\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\",\"apiKey\":\"AIzaSyClkIaQfO5q1aQwKPiyvzoRLQnm5RC-wRk\",\"authDomain\":\"matchday-e447b.firebaseapp.com\",\"messagingSenderId\":\"914670665828\",\"projectNumber\":\"914670665828\",\"version\":\"2\"},\"_authTokenSyncURL\":\"/__session\"}",
+      "FIREBASE_CONFIG": "{\"projectId\":\"matchday-e447b\",\"storageBucket\":\"matchday-e447b.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "matchday-e447b",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/matchday-e447b/locations/us-central1/services/ssrmatchdaye447b"
+    },
+    "codebase": "firebase-frameworks-matchday-e447b",
+    "runServiceId": "ssrmatchdaye447b",
+    "cpu": 1,
+    "securityLevel": "SECURE_ALWAYS",
+    "targetedByOnly": true,
+    "hash": "1a397662747f32a04a5f555089c907b2c0d2470a"
+  },
+  "op": "update",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "exit": 1,
+    "message": "Build failed with status: FAILURE and message: npm error code EUSAGE\nnpm error\nnpm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.\nnpm error\nnpm error Missing: acorn@8.15.0 from lock file\nnpm error Missing: @types/markdown-it@14.1.2 from lock file\nnpm error Missing: markdown-it@14.1.0 from lock file\nnpm error Missing: @swc/helpers@0.5.18 from lock file\nnpm error\nnpm error Clean install a project\nnpm error\nnpm error Usage:\nnpm error npm ci\nnpm error\nnpm error Options:\nnpm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]\nnpm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]\nnpm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]\nnpm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]\nnpm error [--no-bin-links] [--no-fund] [--dry-run]\nnpm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]\nnpm error [-ws|--workspaces] [--include-workspace-root] [--install-links]\nnpm error\nnpm error aliases: clean-install, ic, install-clean, isntall-clean\nnpm error\nnpm error Run \"npm help ci\" for more info\nnpm error A complete log of this run can be found in: /www-data-home/.npm/_logs/2026-01-01T15_57_26_644Z-debug-0.log. For more details see the logs at https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828.",
+    "original": {
+      "code": 3,
+      "message": "Build failed with status: FAILURE and message: npm error code EUSAGE\nnpm error\nnpm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.\nnpm error\nnpm error Missing: acorn@8.15.0 from lock file\nnpm error Missing: @types/markdown-it@14.1.2 from lock file\nnpm error Missing: markdown-it@14.1.0 from lock file\nnpm error Missing: @swc/helpers@0.5.18 from lock file\nnpm error\nnpm error Clean install a project\nnpm error\nnpm error Usage:\nnpm error npm ci\nnpm error\nnpm error Options:\nnpm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]\nnpm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]\nnpm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]\nnpm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]\nnpm error [--no-bin-links] [--no-fund] [--dry-run]\nnpm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]\nnpm error [-ws|--workspaces] [--include-workspace-root] [--install-links]\nnpm error\nnpm error aliases: clean-install, ic, install-clean, isntall-clean\nnpm error\nnpm error Run \"npm help ci\" for more info\nnpm error A complete log of this run can be found in: /www-data-home/.npm/_logs/2026-01-01T15_57_26_644Z-debug-0.log. For more details see the logs at https://console.cloud.google.com/cloud-build/builds;region=us-central1/6374ba6c-f483-4a95-a4ae-db43114ada88?project=914670665828."
+    },
+    "status": 3,
+    "code": 3
+  }
+}
+[2026-01-01T15:57:56.557Z] Error: Failed to update function ssrmatchdaye447b in region us-central1
+    at C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:411:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Fabricator.updateV2Function (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:400:32)
+    at async Fabricator.updateEndpoint (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:160:13)
+    at async handle (C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:89:17)
+
+Error: There was an error deploying functions

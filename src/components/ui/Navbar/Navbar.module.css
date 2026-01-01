@@ -1,0 +1,81 @@
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    background: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(16px);
+    border: var(--border-light);
+    border-radius: var(--radius-full);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -0.03em;
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navLink {
+    font-weight: 500;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.navLink:hover {
+    color: var(--color-primary);
+}
+
+.signUpBtn {
+    color: #000 !important;
+}
+
+.mobileMenuBtn {
+    display: none;
+    color: var(--color-text-main);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        top: 0;
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        border-bottom: var(--border-light);
+        padding: 1rem;
+    }
+
+    .navLinks {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0F0F0F;
+        flex-direction: column;
+        padding: 2rem;
+        border-bottom: var(--border-light);
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+
+    .mobileMenuBtn {
+        display: block;
+    }
+}

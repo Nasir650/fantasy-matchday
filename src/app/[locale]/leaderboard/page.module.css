@@ -1,0 +1,303 @@
+.container {
+    min-height: 100vh;
+    background: #030303;
+    padding: 100px 40px 60px;
+}
+
+.pageTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/* Main Card */
+.mainCard {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(15, 15, 15, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Top Bar */
+.topBar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.liveIndicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 255, 133, 0.1);
+    border: 1px solid rgba(0, 255, 133, 0.3);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: var(--color-primary);
+}
+
+.liveDot {
+    width: 8px;
+    height: 8px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.liveCount {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.searchBar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+.searchIcon {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.searchInput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 0.875rem;
+    outline: none;
+}
+
+.searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.filterDropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+/* Day Tabs */
+.dayTabs {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    overflow-x: auto;
+}
+
+.dayTab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    background: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 90px;
+}
+
+.dayTab:hover {
+    border-color: rgba(0, 255, 133, 0.3);
+}
+
+.activeTab {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.activeTab .dayName,
+.activeTab .dayDate {
+    color: #030303;
+}
+
+.dayName {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.25rem;
+}
+
+.dayDate {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.calendarBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.75rem 1rem;
+    background: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+/* League Section */
+.leagueSection {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.leagueSection:last-child {
+    border-bottom: none;
+}
+
+.leagueHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: rgba(20, 20, 20, 0.8);
+}
+
+.leagueIcon {
+    font-size: 1.25rem;
+}
+
+.leagueName {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.leagueInfo {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-left: auto;
+}
+
+/* Match Row */
+.matchesList {
+    background: rgba(25, 25, 25, 0.5);
+}
+
+.matchRow {
+    display: flex;
+    align-items: center;
+    padding: 0.875rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.matchRow:last-child {
+    border-bottom: none;
+}
+
+.matchTime {
+    min-width: 60px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.liveTime {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.matchTeams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 0.75rem;
+}
+
+.teamName {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    min-width: 100px;
+}
+
+.teamName:first-child {
+    text-align: right;
+}
+
+.teamName:last-child {
+    text-align: left;
+}
+
+.teamFlag {
+    font-size: 1.25rem;
+}
+
+.matchScore {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    min-width: 40px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 80px 20px 40px;
+    }
+
+    .pageTitle {
+        font-size: 2rem;
+    }
+
+    .topBar {
+        flex-wrap: wrap;
+    }
+
+    .searchBar {
+        order: 3;
+        flex: 100%;
+    }
+
+    .dayTabs {
+        padding: 1rem;
+    }
+
+    .dayTab {
+        min-width: 70px;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .matchTeams {
+        gap: 0.5rem;
+    }
+
+    .teamName {
+        min-width: 70px;
+        font-size: 0.75rem;
+    }
+}
