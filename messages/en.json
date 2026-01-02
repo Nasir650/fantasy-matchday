@@ -68,7 +68,10 @@
         "selectMatch": "Select Match",
         "live": "LIVE",
         "scheduled": "SCHEDULED",
-        "upcoming": "UPCOMING"
+        "upcoming": "UPCOMING",
+        "liveMatchesTitle": "🔴 Live Matches",
+        "upcomingMatchesTitlePrefix": "Upcoming",
+        "upcomingMatchesTitleHighlight": "Matches"
     },
     "Prizes": {
         "title": "Amazing",
@@ -177,6 +180,21 @@
         }
     },
     "Lineup": {
-        "title": "Pick Your Lineup"
+        "title": "Pick Your Lineup",
+        "lookingForMatch": "Looking for match...",
+        "round": "Round",
+        "yourTurn": "🟢 YOUR TURN",
+        "botPicking": "🔴 {botName} Picking...",
+        "availablePlayers": "Available Players",
+        "mySquad": "My Squad",
+        "draftLog": "Draft Log",
+        "picked": "picked",
+        "you": "You",
+        "matchInProgress": "Match in Progress...",
+        "matchFinished": "Match Finished!",
+        "yourScore": "Your Score",
+        "youWon": "🏆 YOU WON!",
+        "betterLuck": "Better luck next time!",
+        "backToHome": "Back to Home"
     }
 }

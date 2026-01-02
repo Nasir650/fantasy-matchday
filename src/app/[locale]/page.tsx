@@ -5,8 +5,6 @@ import { WhyChoose } from "@/components/features/WhyChoose/WhyChoose";
 import { AmazingPrizes } from "@/components/features/AmazingPrizes/AmazingPrizes";
 import { ReadyToWin } from "@/components/features/ReadyToWin/ReadyToWin";
 import { MatchCard } from "@/components/features/MatchCard/MatchCard";
-import { Button } from "@/components/ui/Button/Button";
-import { Link } from "@/navigation";
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
@@ -21,9 +19,28 @@ export default function Home() {
       <WhyChoose />
 
       <section className={styles.matchesSection}>
+        {/* LIVE Matches */}
         <div className={styles.matchesHeader}>
           <h2 className={styles.matchesTitle}>
-            {t('Matches.titlePrefix')} <span className="text-primary">{t('Matches.titleHighlight')}</span>
+            {t('Matches.liveMatchesTitle')}
+          </h2>
+        </div>
+        <div className={styles.matchesGrid} style={{ marginBottom: '4rem' }}>
+          <MatchCard
+            homeTeam={{ name: "Real Madrid", logo: "" }}
+            awayTeam={{ name: "Barcelona", logo: "" }}
+            date="Today"
+            time="LIVE"
+            venue="Santiago Bernabéu"
+            status="live"
+            variant="green"
+          />
+        </div>
+
+        {/* UPCOMING Matches */}
+        <div className={styles.matchesHeader}>
+          <h2 className={styles.matchesTitle}>
+            {t('Matches.upcomingMatchesTitlePrefix')} <span className="text-primary">{t('Matches.upcomingMatchesTitleHighlight')}</span>
           </h2>
         </div>
         <div className={styles.matchesGrid}>
@@ -34,7 +51,7 @@ export default function Home() {
             time="20:00"
             venue="King Fahd Stadium"
             status="scheduled"
-            variant="green"
+            variant="dark"
           />
           <MatchCard
             homeTeam={{ name: "Al-Ittihad", logo: "" }}
@@ -46,13 +63,13 @@ export default function Home() {
             variant="dark"
           />
           <MatchCard
-            homeTeam={{ name: "Al-Shabab", logo: "" }}
-            awayTeam={{ name: "Al-Ettifaq", logo: "" }}
-            date="Sat, Nov 25"
+            homeTeam={{ name: "Liverpool", logo: "" }}
+            awayTeam={{ name: "Man City", logo: "" }}
+            date="Sun, Nov 26"
             time="21:00"
-            venue="Prince Faisal bin Fahd"
+            venue="Anfield"
             status="scheduled"
-            variant="green"
+            variant="dark"
           />
         </div>
       </section>

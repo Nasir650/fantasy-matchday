@@ -4,6 +4,7 @@ import React from 'react';
 import styles from './MatchCard.module.css';
 import clsx from 'clsx';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
 
 interface Team {
     name: string;
@@ -75,9 +76,12 @@ export const MatchCard: React.FC<MatchCardProps> = ({
             </div>
 
             {/* Select Match Button */}
-            <button className={clsx(styles.selectBtn, variant === 'dark' ? styles.darkBtn : styles.greenBtn)}>
+            <Link
+                href={`/lineup?match=${homeTeam.name}-${awayTeam.name}`}
+                className={clsx(styles.selectBtn, variant === 'dark' ? styles.darkBtn : styles.greenBtn)}
+            >
                 {t('selectMatch')}
-            </button>
+            </Link>
         </div>
     );
 };
